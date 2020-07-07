@@ -1,0 +1,65 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Muli", sans-serif;
+}
+
+.switch {
+    height: 100px;
+    width: 400px;
+    background-color: rgb(214, 2, 2);
+    border-radius: 30% 5rem 5rem 30%;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    transition: all ease-out 0.3s;
+}
+
+.switch h2 {
+    position: absolute;
+    z-index: 1;
+    font-size: 4rem;
+    margin-top: 0;
+    margin-left: 150px;
+    color: aliceblue;
+    pointer-events: none;
+}
+
+.switch-btn {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 20%;
+    border: 3px solid black;
+    position: relative;
+    left: -0.1em;
+    transition: all ease-out 0.5s;
+    cursor: pointer;
+}
+
+.switch-btn.active {
+    left: 74%;
+    border-radius: 50%;
+}
+
+.switch.active {
+    background-color: teal;
+    border-radius: 5rem;
+}
+
+@media (max-width: 400px) {
+    body {
+        height: 50vh;
+    }
+    .switch h2 {
+        position: absolute;
+        z-index: 1;
+        font-size: 3.5rem;
+        margin-top: 0;
+        margin-left: 120px;
+        color: aliceblue;
+        pointer-events: none;
+    }
+}
